@@ -2,10 +2,10 @@ import dotenv from "dotenv";
 dotenv.config();
 
 const conf = {
-  AUTO_READ_STATUS: process.env.AUTO_READ_STATUS || "yes",
-  AUTO_LIKE: process.env.AUTO_LIKE || "yes",
+  AUTO_READ_STATUS: process.env.AUTO_READ_STATUS || "on",
+  AUTO_LIKE: process.env.AUTO_LIKE || "on",
   AUTO_READ_DM: process.env.AUTO_READ_DM || "off",
-  AUTO_DOWNLOAD_STATUS: process.env.AUTO_DOWNLOAD_STATUS || "yes",
+  AUTO_DOWNLOAD_STATUS: process.env.AUTO_DOWNLOAD_STATUS || "on",
   ADM: process.env.ANTI_DELETE || "yes",
   ON: process.env.OWNER_NAME || "kimcoder",
   ANTICALL: process.env.ANTICALL || "off",
@@ -14,7 +14,7 @@ const conf = {
   ANTILINK: process.env.ANTILINK || "off",
   ANTILINK_ACTION: process.env.ANTILINK_ACTION || "delete",
   timezone: process.env.TIME_ZONE || "Africa/Nairobi",
-  PRESENCE_DM: process.env.DM_PRESENCE || "no",
+  PRESENCE_DM: process.env.DM_PRESENCE || "off",
   PRESENCE_GROUP: process.env.GROUP_PRESENCE || "paused",
   MODE: process.env.MODE || "private",
   AV: process.env.AV || "on",
